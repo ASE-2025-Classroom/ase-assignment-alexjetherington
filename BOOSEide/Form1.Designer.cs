@@ -28,41 +28,41 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
-            button1 = new Button();
-            button2 = new Button();
+            booseInput = new TextBox();
+            runButton = new Button();
+            clearButton = new Button();
             pictureBoxCanvas = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBoxCanvas).BeginInit();
             SuspendLayout();
             // 
-            // textBox1
+            // booseInput
             // 
-            textBox1.Location = new Point(12, 12);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(249, 541);
-            textBox1.TabIndex = 0;
-            textBox1.TextChanged += textBox1_TextChanged;
+            booseInput.Location = new Point(12, 12);
+            booseInput.Multiline = true;
+            booseInput.Name = "booseInput";
+            booseInput.PlaceholderText = "Type BOOSE code";
+            booseInput.Size = new Size(249, 541);
+            booseInput.TabIndex = 0;
             // 
-            // button1
+            // runButton
             // 
-            button1.Location = new Point(12, 559);
-            button1.Name = "button1";
-            button1.Size = new Size(122, 29);
-            button1.TabIndex = 1;
-            button1.Text = "Run";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            runButton.Location = new Point(12, 559);
+            runButton.Name = "runButton";
+            runButton.Size = new Size(122, 29);
+            runButton.TabIndex = 1;
+            runButton.Text = "Run";
+            runButton.UseVisualStyleBackColor = true;
+            runButton.Click += runButton_Click;
             // 
-            // button2
+            // clearButton
             // 
-            button2.Location = new Point(140, 559);
-            button2.Name = "button2";
-            button2.Size = new Size(122, 29);
-            button2.TabIndex = 2;
-            button2.Text = "Clear";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            clearButton.Location = new Point(140, 559);
+            clearButton.Name = "clearButton";
+            clearButton.Size = new Size(122, 29);
+            clearButton.TabIndex = 2;
+            clearButton.Text = "Clear";
+            clearButton.UseVisualStyleBackColor = true;
+            clearButton.Click += clearButton_Click;
             // 
             // pictureBoxCanvas
             // 
@@ -79,9 +79,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(914, 600);
             Controls.Add(pictureBoxCanvas);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(textBox1);
+            Controls.Add(clearButton);
+            Controls.Add(runButton);
+            Controls.Add(booseInput);
             Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             Text = "Form1";
@@ -93,9 +93,9 @@
 
         #endregion
 
-        private TextBox textBox1;
-        private Button button1;
-        private Button button2;
+        private TextBox booseInput;
+        private Button runButton;
+        private Button clearButton;
         private PictureBox picture;
         private PictureBox pictureBoxCanvas;
     }

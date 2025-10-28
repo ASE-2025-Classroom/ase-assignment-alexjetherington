@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BOOSEide")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e997081d1fbfb9f9d54692117c1f9f662dd95e7b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3915f2140a716823ba34195f5a5287fca4fea4fb")]
 [assembly: System.Reflection.AssemblyProductAttribute("BOOSEide")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BOOSEide")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

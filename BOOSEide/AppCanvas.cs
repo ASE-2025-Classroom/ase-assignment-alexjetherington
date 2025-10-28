@@ -35,6 +35,11 @@ namespace BOOSEide
         {
             g.DrawEllipse(Pen, Xpos, Ypos, radius * 2, radius * 2);
         }
+        
+        public void ProcessCommand(string command)
+        {
+            throw new NotImplementedException();
+        }
 
         public void Clear()
         {

@@ -1,5 +1,8 @@
 using BOOSE;
 using System.Diagnostics;
+using System.Drawing.Printing;
+using System.Drawing.Text;
+using System.Security.Cryptography.X509Certificates;
 
 namespace BOOSEide
 {
@@ -28,17 +31,19 @@ namespace BOOSEide
             Bitmap b = (Bitmap)canvas.getBitmap();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void runButton_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            string userInputBlock = booseInput.Text.Trim().ToLower();
+            string[] commandLines = userInputBlock
+                .Split(new[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
+
+            foreach (string line in commandLines)
+            {
+                canvas.ProcessCommand(line);
+            }
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
+        private void clearButton_Click(object sender, EventArgs e)
         {
             throw new NotImplementedException();
         }
