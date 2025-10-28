@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\c3657491\\source\\repos\\BOOSEide\\BOOSEide\\BOOSEide.csproj": {}
+    "C:\\Users\\alexe\\source\\repos\\ase-assignment-alexjetherington\\BOOSEide\\BOOSEide.csproj": {}
   },
   "projects": {
-    "C:\\Users\\c3657491\\source\\repos\\BOOSEide\\BOOSEide\\BOOSEide.csproj": {
+    "C:\\Users\\alexe\\source\\repos\\ase-assignment-alexjetherington\\BOOSEide\\BOOSEide.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\c3657491\\source\\repos\\BOOSEide\\BOOSEide\\BOOSEide.csproj",
+        "projectUniqueName": "C:\\Users\\alexe\\source\\repos\\ase-assignment-alexjetherington\\BOOSEide\\BOOSEide.csproj",
         "projectName": "BOOSEide",
-        "projectPath": "C:\\Users\\c3657491\\source\\repos\\BOOSEide\\BOOSEide\\BOOSEide.csproj",
-        "packagesPath": "C:\\Users\\c3657491\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\c3657491\\source\\repos\\BOOSEide\\BOOSEide\\obj\\",
+        "projectPath": "C:\\Users\\alexe\\source\\repos\\ase-assignment-alexjetherington\\BOOSEide\\BOOSEide.csproj",
+        "packagesPath": "C:\\Users\\alexe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\alexe\\source\\repos\\ase-assignment-alexjetherington\\BOOSEide\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\c3657491\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\alexe\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
