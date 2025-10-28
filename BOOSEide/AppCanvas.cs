@@ -14,13 +14,17 @@ namespace BOOSEide
         private int xPos, yPos; //pen position when drawing
         Pen Pen;
 
-        public AppCanvas(int xsize, int ysize)
+        public AppCanvas(PictureBox pictureBox)
         {
-            CanvasBitmap = new Bitmap(xsize, ysize);
+            CanvasBitmap = new Bitmap(pictureBox.Width, pictureBox.Height);
             g = Graphics.FromImage(CanvasBitmap);
             Xpos = 100;
             yPos = 100;
             Pen = new Pen(Color.Black);
+
+            pictureBox.Image = CanvasBitmap;
+
+            g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias; 
         }
 
         public int Xpos { get => xPos; set => xPos = value; }   

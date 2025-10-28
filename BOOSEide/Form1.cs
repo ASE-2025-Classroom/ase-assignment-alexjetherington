@@ -14,7 +14,8 @@ namespace BOOSEide
         {
             InitializeComponent();
             Debug.WriteLine(AboutBOOSE.about());
-            canvas = new AppCanvas(640, 480);
+            canvas = new AppCanvas(pictureBoxCanvas);
+            canvas.Circle(100, true);
             Factory = new CommandFactory();
             Program = new StoredProgram(canvas);
             Parser = new Parser(Factory, Program);

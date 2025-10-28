@@ -31,8 +31,8 @@
             textBox1 = new TextBox();
             button1 = new Button();
             button2 = new Button();
-            pictureBox1 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            pictureBoxCanvas = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxCanvas).BeginInit();
             SuspendLayout();
             // 
             // textBox1
@@ -64,21 +64,21 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
-            // pictureBox1
+            // pictureBoxCanvas
             // 
-            pictureBox1.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox1.Location = new Point(267, 12);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(635, 576);
-            pictureBox1.TabIndex = 3;
-            pictureBox1.TabStop = false;
+            pictureBoxCanvas.BorderStyle = BorderStyle.FixedSingle;
+            pictureBoxCanvas.Location = new Point(267, 12);
+            pictureBoxCanvas.Name = "pictureBoxCanvas";
+            pictureBoxCanvas.Size = new Size(635, 576);
+            pictureBoxCanvas.TabIndex = 3;
+            pictureBoxCanvas.TabStop = false;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(914, 600);
-            Controls.Add(pictureBox1);
+            Controls.Add(pictureBoxCanvas);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(textBox1);
@@ -86,7 +86,7 @@
             Name = "Form1";
             Text = "Form1";
             Paint += Form1_Paint;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxCanvas).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -96,6 +96,7 @@
         private TextBox textBox1;
         private Button button1;
         private Button button2;
-        private PictureBox pictureBox1;
+        private PictureBox picture;
+        private PictureBox pictureBoxCanvas;
     }
 }
