@@ -36,11 +36,6 @@ namespace BOOSEide
             g.DrawEllipse(Pen, Xpos, Ypos, radius * 2, radius * 2);
         }
         
-        public void ProcessCommand(string command)
-        {
-            throw new NotImplementedException();
-        }
-
         public void Clear()
         {
             g.Clear(Color.White);
@@ -66,7 +61,7 @@ namespace BOOSEide
 
         public void Rect(int width, int height, bool filled)
         {
-            throw new NotImplementedException();
+            g.DrawRectangle(Pen, Xpos, Ypos, width, height);
         }
 
         public void Reset()
@@ -82,17 +77,22 @@ namespace BOOSEide
 
         public void SetColour(int red, int green, int blue)
         {
-            throw new NotImplementedException();
+            Pen.Color = Color.FromArgb(red, green, blue);
         }
 
         public void Tri(int width, int height)
         {
-            throw new NotImplementedException();
+            g.DrawPolygon(Pen, new PointF[]
+            {
+                new PointF(Xpos, Ypos),
+                new PointF(Xpos + width / 2, Ypos + height),
+                new PointF(Xpos - width / 2, Ypos + height)
+            }); 
         }
 
         public void WriteText(string text)
         {
-            throw new NotImplementedException();
+            g.DrawString(text, new Font("Arial", 12), Brushes.Black, new PointF(Xpos, Ypos));
         }
     }
 }

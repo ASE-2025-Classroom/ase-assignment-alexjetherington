@@ -39,7 +39,7 @@ namespace BOOSEide
 
             foreach (string line in commandLines)
             {
-                canvas.ProcessCommand(line);
+                
             }
         }
 
