@@ -43,12 +43,14 @@ namespace BOOSEide
 
         public void Clear()
         {
-            //throw new NotImplementedException();
+            g.Clear(Color.White);
         }
 
         public void DrawTo(int x, int y)
         {
-            //throw new NotImplementedException();
+            g.DrawLine(Pen, Xpos, Ypos, x, y);
+            Xpos = x;
+            Ypos = y;
         }
 
         public object getBitmap()
